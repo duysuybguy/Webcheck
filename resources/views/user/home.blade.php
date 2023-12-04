@@ -15,7 +15,7 @@
 
             <div class="main-container">
                 <div class="main-header">
-                    <a class="menu-link-main" href="#">All Apps</a>
+                    <a class="menu-link-main" href="#">© Made by Tran Anh 22YC2</a>
 
                 </div>
                 <div class="content-wrapper">
