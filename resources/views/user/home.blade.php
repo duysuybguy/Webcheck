@@ -18,7 +18,7 @@
 
                 </div>
                 <div class="content-section">
-                        <div class="content-section-title">© Made by TranAnh_22YC2</div>
+                <div class="app-card__subtext"><h3>© Made by TranAnh_22YC2</h3></div>
                         <ul>
                             <li class="adobe-product">
                                 <div class="products">
@@ -31,7 +31,7 @@
                                     Photoshop
                                 </div>
                                 <span class="status">
-        <span class="status-circle green"></span> Updated
+                                    <span class="status-circle green"></span> Updated
                                 </span>
                                 <div class="button-wrapper">
                                     <button class="content-button status-button open">Open</button>
@@ -49,7 +49,7 @@
                                 </div>
 
                                 <span class="status">
-        <span class="status-circle"></span> Update Available</span>
+                                     <span class="status-circle"></span> Update Available</span>
                                 <div class="button-wrapper">
                                     <button class="content-button status-button">Update this app</button>
                                     <div class="pop-up">
