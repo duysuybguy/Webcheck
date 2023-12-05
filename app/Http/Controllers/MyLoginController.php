@@ -11,18 +11,21 @@ use Hash;
 
 class MyLoginController extends Controller
 {
-    public function getLogin(){
+    public function getLogin()
+    {
         return view('pages.login');
     }
-    public function getRegister(){
+    public function getRegister()
+    {
         return view('pages.register');
     }
 
     public function postRegister(Request $request)
     {
-        $request->validate([
+        $request->validate
+        ([
             'name' => 'required',
-            'email' => 'required|email|unique:users',
+            'email' => 'required|unique:users',
             'password' => 'required|min:6',
         ]);
         $data = $request->all();
@@ -32,24 +35,32 @@ class MyLoginController extends Controller
     public function postLogin(Request $request)
     {
         $credentials = $request->only('email', 'password');
-        if (Auth::attempt($credentials)) {
-            if(Auth::user()->status==1){
+        if (Auth::attempt($credentials)) 
+        {
+            if(Auth::user()->status==1)
+            {
                 $user = Auth::user();
-                $res = [
+                $res = 
+                [
                     'rc' => 0,
                     'rd' => 'Đăng nhập thành công',
                     'data'=>$user
                 ];
-            }else{
+            }
+            else
+            {
                 Auth::logout();
                 $res = [
                     'rc' => -1,
                     'rd' => 'Tài khoản của bạn chưa được phê duyệt',
+                    'redirect' => '/503',
                 ];
             }
         }
-        else{
-            $res = [
+        else
+        {
+            $res = 
+            [
                 'rc' => -1,
                 'rd' => 'Tài khoản hoặc mật khẩu không chính xác.',
             ];
