@@ -44,10 +44,12 @@ Route::middleware(['checkLogin', 'singleLogin', 'checkStatusUser'])->group(funct
        
     });
 });
-Route::get('/503', function () {
+Route::get('/503', function () 
+{
     return view('error.503');
 });
-Route::get('/index.html', function () {
+Route::get('/index.html', function () 
+{
     return view('user.home');
 });
 
