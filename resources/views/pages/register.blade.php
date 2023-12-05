@@ -160,8 +160,6 @@ body{
                         <img src="assets/img/logo.png" class="img-fluid" alt="Logo">
                     </div>
                     <h3>Đăng ký thành viên</h3>
-                    <p class="account-subtitle">Đăng ký với email của bạn</p>
-
                     <form method="post" action="{{route('postRegister')}}">
                         @csrf
                         <div class="form-group">
@@ -169,8 +167,8 @@ body{
                             <input type="text" required name="name" placeholder="Nhập tên của bạn" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label class="focus-label">Email</label>
-                            <input type="text" required name="email" placeholder="Nhập email của bạn" class="form-control ">
+                            <label class="focus-label">Tên tài khoản</label>
+                            <input type="text" required name="email" placeholder="Nhập tài khoản của bạn" class="form-control ">
                         </div>
                         <div class="form-group">
                             <label class="focus-label">Mật khẩu</label>
@@ -199,9 +197,7 @@ body{
                 </div>
             </div>
             <!-- /Login -->
-
         </div>
-
     </div>
 </div>
 <!-- /Main Wrapper -->
