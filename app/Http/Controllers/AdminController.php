@@ -28,53 +28,70 @@ class AdminController extends Controller
         $data = IpConfig::all();
         return view('admin.ip-config',compact('data'));
     }
-    public function getListUser(Request $request){
+    public function getListUser(Request $request)
+    {
         $req = $request->all();
         $user = User::where('role','0')->where('name', 'like', '%'.$req['userName'].'%');
         $data = $user->orderBy('created_at', 'DESC')->skip($req['start'])->take($req['limit'])->get();
-        if(count($data)){
-            $res = [
+        if(count($data))
+        {
+            $res = 
+            [
                 'rc'=>'0',
                 'data'=>$data,
                 'total' =>User::where('role','0')->where('name', 'like', '%'.$req['userName'].'%')->count()
             ];
-        }else{
-            $res = [
+        }
+        else
+        {
+            $res = 
+            [
                 'rc'=>'1',
                 'rd'=>'Không tìm thấy bản ghi nào'
             ];
         }
         return json_encode($res);
     }
-    public function getListIp(Request $request){
+    public function getListIp(Request $request)
+    {
         $data = IpConfig::skip(0)->take(10)->get();
-        if(count($data)){
+        if(count($data))
+        {
             $res = [
                 'rc'=>'0',
                 'data'=>$data
             ];
-        }else{
-            $res = [
+        }
+        else
+        {
+            $res = 
+            [
                 'rc'=>'1',
                 'rd'=>'Không tìm thấy bản ghi nào'
             ];
         }
         return json_encode($res);
     }
-    public function addIp(Request $request){
+    public function addIp(Request $request)
+    {
         Log::info("Thêm ip");
         $name = 'Không xác định';
         $ip = $request->ip;
-        if($request->name){
+        if($request->name)
+        {
             $name = $request->name;
         }
         $check = IpConfig::where('ip',$ip)->get();
-        if(count($check)){
-            $res = [
+        if(count($check))
+        {
+            $res = 
+            [
                 'rc'=>'-1',
                 'rd'=>'Địa chỉ ip này đã tồn tại'
             ];
-        }else{
+        }
+        else
+        {
             $config = new IpConfig;
             $config->ip = $ip;
             $config->name = $name;
