@@ -37,6 +37,7 @@
                         Có lỗi trong quá trình thực hiện!</h1>
                     <h2>
                         Xin lỗi vì bất tiện này.</h2>
+                        <h2></h2>
                     <div class="error-details">
                         Tài khoản của bạn đã bị khoá hoặc chưa được phê duyệt. Vui lòng liên hệ admin để xử lý!
                     </div>
