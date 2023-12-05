@@ -50,11 +50,11 @@ class MyLoginController extends Controller
             else
             {
                 Auth::logout();
-                $res = [
+                $res = 
+                [
                     'rc' => -1,
                     'rd' => 'Tài khoản của bạn chưa được phê duyệt',
                 ];
-                return redirect('/503');
             }
         }
         else
@@ -65,7 +65,6 @@ class MyLoginController extends Controller
                 'rd' => 'Tài khoản hoặc mật khẩu không chính xác.',
             ];
         }
-        
         return json_encode($res);
     }
 
