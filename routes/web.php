@@ -17,7 +17,8 @@ Route::get('/register', 'MyLoginController@getRegister')->name("getRegister");
 Route::post('/register', 'MyLoginController@postRegister')->name("postRegister");
 Route::get('/logout', 'HomeController@logOut')->name("logOut");
 
-Route::middleware(['cors'])->group(function () {
+Route::middleware(['cors'])->group(function () 
+{
     Route::get('/check-ip-config', 'AdminController@CheckIpConfig');
 });
 
