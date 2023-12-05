@@ -65,6 +65,11 @@ class MyLoginController extends Controller
                 'rd' => 'Tài khoản hoặc mật khẩu không chính xác.',
             ];
         }
+        if (isset($res['redirect'])) 
+        {
+            return redirect($res['redirect']);
+        }
+        
         return json_encode($res);
     }
 
