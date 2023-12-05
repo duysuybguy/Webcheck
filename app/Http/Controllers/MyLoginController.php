@@ -53,8 +53,8 @@ class MyLoginController extends Controller
                 $res = [
                     'rc' => -1,
                     'rd' => 'Tài khoản của bạn chưa được phê duyệt',
-                    'redirect' => '/503',
                 ];
+                return redirect('/503');
             }
         }
         else
@@ -64,10 +64,6 @@ class MyLoginController extends Controller
                 'rc' => -1,
                 'rd' => 'Tài khoản hoặc mật khẩu không chính xác.',
             ];
-        }
-        if (isset($res['redirect'])) 
-        {
-            return redirect($res['redirect']);
         }
         
         return json_encode($res);
