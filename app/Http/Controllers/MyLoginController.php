@@ -53,7 +53,7 @@ class MyLoginController extends Controller
                 $res = 
                 [
                     'rc' => -1,
-                    'rd' => 'Tài khoản của bạn chưa được phê duyệt',
+                    'rd' => 'Tài khoản của bạn chưa được phê duyệt !',
                 ];
             }
         }
