@@ -90,6 +90,7 @@
                                 else 
                                 {
                                     this.thongBao('error', response.data.rd)
+                                    window.location = '/503'
                                 }
                                 this.loading.status = false;
                             }
