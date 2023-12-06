@@ -141,7 +141,11 @@
                         <img src="assets/img/profiles/avatar-01.png" alt="User Image" class="avatar-img rounded-circle">
                     </div>
                     <div class="user-text">
-                        <h6>{{ Auth::user()->name ?? "Admin"}}</h6>
+                        <h6>
+                            <a href="{{route('homeAdmin')}}"> <!-- Thay đổi đường dẫn 'profile' bằng đường dẫn mong muốn -->
+                             {{ Auth::user()->name ?? "Admin"}}
+                            </a>
+                        </h6>
                     </div>
                 </div>
                 <hr class="my-0 ms-2 me-2">
