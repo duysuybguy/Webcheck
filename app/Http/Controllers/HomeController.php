@@ -8,7 +8,8 @@ use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
-    public function getHome(){
+    public function getHome()
+    {
         return view('user.home');
     }
     public function showChapter(Request $request){
