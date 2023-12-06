@@ -45,21 +45,22 @@ export default {
     }
   }, 
   methods: {
-    getListChapter(){
+    getListChapter()
+    {
         axios.get(`/chapter-list`)
-        .then(res => {
-          this.items = res.data.data.map(item => {
+        .then(res => 
+        {
+          this.items = res.data.data.map(item =>
+          {
             return {
-                chapterId: item.id,
-                chapterName: item.name,
-                numberOfQuestions: item.questions_count,
-                parentName: item.cate.name_cate,
-            }
+              chapterId: item.id ?? null,
+              chapterName: item.name ?? null,
+              numberOfQuestions: item.questions_count ?? null,
+              parentName: item.cate?.name_cate ?? null,
+                   }
+            })
           })
-        })
-        .catch(err => {
-          console.log(err);
-        });
+        .catch(err => { console.log(err); });
     },
 
     reloadChapter(id, e){
