@@ -3,9 +3,8 @@
         <div class="login-wrapper">
             <div class="loginbox">
                 <div class="img-logo">
-                    <img src="assets/img/logo.png" class="img-fluid" alt="Logo">
+                    <h3>Đăng nhập thành viên</h3>
                 </div>
-                <h3>Đăng nhập thành viên</h3>
                 <div class="form-group">
                     <label class="focus-label">Tài khoản</label>
                     <input type="text" v-model="infoLogin.userName" required name="email" placeholder="Nhập tài khoản của bạn" class="form-control ">
@@ -74,21 +73,31 @@
                             response => {
                                 console.error('Thông tin đăng nhập trả về:')
                                 console.error(response)
-                                if(response.data.rc == 0) {
+
+                                if(response.data.rc == 0) 
+                                {
                                     this.thongBao('success', response.data.rd)
-                                    if(response.data.data.role == 1) {
+
+                                    if(response.data.data.role == 1) 
+                                    {
                                         window.open("admin", "_self")
-                                    } else {
+                                    } 
+                                    else 
+                                    {
                                         window.open("/", "_self")
                                     }
-                                } else {
+                                } 
+                                else 
+                                {
                                     this.thongBao('error', response.data.rd)
+                                    window.location = '/503'
                                 }
                                 this.loading.status = false;
                             }
                         ).catch((e) => {})
                     },
-                    thongBao(typeNoty, msgNoty) {
+                    thongBao(typeNoty, msgNoty) 
+                    {
                         let msg = "";
                         let cl = "";
                         if(msgNoty) {
