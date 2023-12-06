@@ -3744,7 +3744,7 @@ var render = function render() {
     }
   })]), _vm._v(" "), _c("div", {
     staticClass: "d-grid"
-  }, [_c("button", {
+  }, [_c("br"), _c("br"), _vm._v(" "), _c("button", {
     staticClass: "btn btn-primary",
     on: {
       "&click": function click($event) {
