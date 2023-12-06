@@ -3687,7 +3687,7 @@ var render = function render() {
     staticClass: "login-wrapper"
   }, [_c("div", {
     staticClass: "loginbox"
-  }, [_vm._m(0), _vm._v(" "), _c("div", {
+  }, [_c("h3", [_vm._v("Đăng nhập thành viên")]), _vm._v(" "), _c("div", {
     staticClass: "form-group"
   }, [_c("label", {
     staticClass: "focus-label"
@@ -3751,17 +3751,10 @@ var render = function render() {
         return _vm.login();
       }
     }
-  }, [_vm._v("Đăng nhập")])]), _vm._v(" "), _vm._m(1)])])]);
+  }, [_vm._v("Đăng nhập")])]), _vm._v(" "), _vm._m(0)])])]);
 };
 
 var staticRenderFns = [function () {
-  var _vm = this,
-      _c = _vm._self._c;
-
-  return _c("div", {
-    staticClass: "img-logo"
-  }, [_c("h3", [_vm._v("Đăng nhập thành viên")])]);
-}, function () {
   var _vm = this,
       _c = _vm._self._c;
 
@@ -5632,7 +5625,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.pxn-button-login[data-v-609c2563] {\n    color: #ffffff;\n    font-family: 'Encode Sans', sans-serif;\n    padding: 7px 16px;\n    text-align: center;\n    background: #1A9CC6;\n    border: unset;\n    box-shadow: inset 0 0 0 0 #0071dc;\n    border-radius: 4px;\n    min-width: 110px;\n    transition: all 0.5s;\n    font-weight: 600;\n    font-size: 13px;\n    line-height: 22px;\n}\n\n", ""]);
+exports.push([module.i, "\n.pxn-button-login[data-v-609c2563] {\n    color: #ffffff;\n    font-family: 'Encode Sans', sans-serif;\n    padding: 7px 16px;\n    text-align: center;\n    background: #1A9CC6;\n    border: unset;\n    box-shadow: inset 0 0 0 0 #0071dc;\n    border-radius: 4px;\n    min-width: 110px;\n    transition: all 0.5s;\n    font-weight: 600;\n    font-size: 13px;\n    line-height: 22px;\n}\n@media (max-width: 480px) \n{\n.form-group[data-v-609c2563] \n    {\n        max-width: 100%; /* Điều chỉnh độ rộng tối đa cho điện thoại */\n        margin: 0 auto; /* Để căn giữa */\n}\n.form-control[data-v-609c2563] \n    {\n    width: 100%;\n    box-sizing: border-box; /* Đảm bảo rằng độ rộng tính cả padding và border */\n}\n}\n\n", ""]);
 
 // exports
 
