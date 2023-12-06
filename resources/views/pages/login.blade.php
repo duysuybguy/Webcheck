@@ -96,7 +96,7 @@
         <div class="row"> 
         
         <!-- Login -->
-         <div id="app">
+        <div id="app">
         <user-login/>
         </div>
         <!-- /Login -->
