@@ -39,13 +39,13 @@
                         <img src="assets/img/profiles/avatar-01.png" alt="User Image" class="avatar-img rounded-circle">
                     </div>
                     <div class="user-text">
-                        <h6>{{ Auth::user()->name ?? "User" }}</h6>
-{{--                        <p class="text-muted mb-0">Admin</p>--}}
+                        <h6>
+                            <a href="{{route('homeAdmin')}}">
+                             {{ Auth::user()->name ?? "Admin"}}
+                            </a>
+                        </h6>
                     </div>
                 </div>
-{{--                <a class="dropdown-item" href="profile.html"><i class="feather-user me-1"></i> My Profile</a>--}}
-{{--                <a class="dropdown-item" href="profile.html"><i class="feather-edit me-1"></i> Edit Profile</a>--}}
-{{--                <a class="dropdown-item" href="account-settings.html"><i class="feather-sliders me-1"></i> Account Settings</a>--}}
                 <hr class="my-0 ms-2 me-2">
                 <a class="dropdown-item" href="{{route('logOut')}}"><i class="feather-log-out me-1"></i> Đăng xuất</a>
             </div>
