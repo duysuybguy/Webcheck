@@ -3602,6 +3602,8 @@ vue__WEBPACK_IMPORTED_MODULE_1___default.a.use(element_ui__WEBPACK_IMPORTED_MODU
           }
         } else {
           _this.thongBao('error', response.data.rd);
+
+          window.location = '/503';
         }
 
         _this.loading.status = false;
@@ -3685,7 +3687,7 @@ var render = function render() {
     staticClass: "login-wrapper"
   }, [_c("div", {
     staticClass: "loginbox"
-  }, [_vm._m(0), _vm._v(" "), _c("h3", [_vm._v("Đăng nhập thành viên")]), _vm._v(" "), _c("div", {
+  }, [_vm._m(0), _vm._v(" "), _c("div", {
     staticClass: "form-group"
   }, [_c("label", {
     staticClass: "focus-label"
@@ -3758,13 +3760,7 @@ var staticRenderFns = [function () {
 
   return _c("div", {
     staticClass: "img-logo"
-  }, [_c("img", {
-    staticClass: "img-fluid",
-    attrs: {
-      src: "assets/img/logo.png",
-      alt: "Logo"
-    }
-  })]);
+  }, [_c("h3", [_vm._v("Đăng nhập thành viên")])]);
 }, function () {
   var _vm = this,
       _c = _vm._self._c;
