@@ -153,4 +153,18 @@
         line-height: 22px;
     }
 
+    @media (max-width: 480px) 
+    {
+        .form-group 
+        {
+            max-width: 100%; /* Điều chỉnh độ rộng tối đa cho điện thoại */
+            margin: 0 auto; /* Để căn giữa */
+        }
+        .form-control 
+        {
+        width: 100%;
+        box-sizing: border-box; /* Đảm bảo rằng độ rộng tính cả padding và border */
+        }
+    }
+
 </style>
