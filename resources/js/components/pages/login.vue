@@ -13,6 +13,7 @@
                     <input type="password" v-model="infoLogin.passWord" required name="password" class="form-control ">
                 </div>
                 <div class="d-grid">
+                    <br><br>
                     <button class="btn btn-primary" @click.passive="login()">Đăng nhập</button>
                 </div>
                 <div class="dont-have">Bạn chưa có tài khoản? <a href="/register">Đăng ký</a>
