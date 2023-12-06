@@ -53,15 +53,18 @@
             },
             methods: {
                 login() {
-                        if(!this.infoLogin.userName) {
+                        if(!this.infoLogin.userName) 
+                        {
                             this.thongBao('error', 'Vui lòng bổ sung tên tài khoản.')
                             return;
                         }
-                        if(!this.infoLogin.passWord) {
+                        if(!this.infoLogin.passWord) 
+                        {
                             this.thongBao('error', 'Vui lòng bổ sung mật khẩu.')
                             return;
                         }
-                        let params = {
+                        let params = 
+                        {
                             'email': this.infoLogin.userName,
                             'password': this.infoLogin.passWord,
                         }
