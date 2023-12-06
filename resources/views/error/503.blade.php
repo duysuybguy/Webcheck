@@ -44,7 +44,7 @@
                     <div class="error-actions">
                         <a href="http://zalo.me/0963725025" class="btn btn-primary btn-lg">
                         Liên hệ admin </a>
-                        <a href="/" class="btn btn-default btn-lg">
+                        <a href="{{route('getLogin')}}" class="btn btn-default btn-lg">
                             Đăng xuất </a>
                     </div>
                 </div>
