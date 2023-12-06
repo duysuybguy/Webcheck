@@ -2,7 +2,6 @@
     <div v-loading.fullscreen.lock="loading.status" :element-loading-text="loading.text" element-loading-spinner="el-icon-loading" element-loading-background="rgba(0, 0, 0, 0.8)">
         <div class="login-wrapper">
             <div class="loginbox">
-                
                 <h3>Đăng nhập thành viên</h3>
                 <div class="form-group">
                     <label class="focus-label">Tài khoản</label>
