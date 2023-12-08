@@ -2,9 +2,9 @@
   <div id="form-cau-hoi">
     <div class="form-header">
       <div class="bg-primary text-white d-flex justify-content-center align-item-center py-2">
-        <p class="mr-3 mr-sm-5 mb-0" style="color: green"><BIconCheckCircleFill class="text-light"></BIconCheckCircleFill> Đúng: {{ countRightAnswer }}</p>
+        <p class="mr-3 mr-sm-5 mb-0" style="color: rgb(0, 235, 252)"><BIconCheckCircleFill class="text-light"></BIconCheckCircleFill> Đúng: {{ countRightAnswer }}</p>
         <p class="mr-3 mr-sm-5 mb-0" style="color: red"><BIconXCircleFill class="text-light"></BIconXCircleFill> Sai: {{ countFailAnswer }}</p>
-        <p class="mr-3 mr-sm-5 mb-0" style="color: #00a67d"><BIconQuestionCircleFill class="text-light"></BIconQuestionCircleFill> Chưa làm: {{ countNotDoneAnswer }}</p>
+        <p class="mr-3 mr-sm-5 mb-0" style="color: rgb(0, 235, 252)"><BIconQuestionCircleFill class="text-light"></BIconQuestionCircleFill> Chưa làm: {{ countNotDoneAnswer }}</p>
       </div>
     </div>
     <div id="form_body" v-if="currentQuestion" class="px-sm-5 px-4">
